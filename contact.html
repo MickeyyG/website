@@ -44,7 +44,41 @@
 <!-- particles.js container -->
 <div id ="contact">
   <h2> Contact </h2>
-  <p> ??? </p>
+  <!-- Set height and width with CSS -->
+  <div id="zero-padding">
+  <div class="col-6">
+  <div id="googleMap" style="height:400px;width:80%;"></div>
+
+        <!-- Add Google Maps -->
+            <script src="http://maps.googleapis.com/maps/api/js"></script>
+            <script>
+            var myCenter = new google.maps.LatLng(40.114778, -88.227943);
+            function initialize() {
+                var mapProp = {
+                    center:myCenter,
+                    zoom:13,
+                    scrollwheel:false,
+                    draggable:true,
+                    mapTypeId:google.maps.MapTypeId.ROADMAP
+                    };
+                var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                var marker = new google.maps.Marker({
+                    position:myCenter,
+                    animation: google.maps.Animation.DROP
+                });
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+
+  </div>  
+  <div class="col-6">
+    <br><br><br>
+    <p> Contact me at mtgao2@illinois.edu </p>
+    <br>
+    <p> or find me on <a href="https://www.linkedin.com/in/michael-gao-275669b2"> Linkedin</a> and <a href="https://github.com/mickeyyg"> Github</a> </p>
+  </div>  
+  </div>
 </div> 
 
 </html>

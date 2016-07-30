@@ -78,6 +78,10 @@ p {
     padding-bottom: 20%;
 }
 
+#vert-center{
+    padding-top: 50%;
+
+}
 #about {
     background-color: #fff;
     color: #444;
@@ -119,42 +123,34 @@ p {
 }
 
 
-#projects .glyphicon{
-    font-size: 130px;
-    padding-top: 40px; 
-    padding-bottom: 40px; 
-}
-
 #contact {
     background-color: #fff;
     color: #444;
     height: 100%;
     padding-right: 15%;
     padding-left: 15%;
-
 }
 
 
-#contact .glyphicon{
-    font-size: 20px;
-    padding: 0px;  
+
+#zero-padding {
+    padding-right: 0%;
+    padding-left: 15%;
 }
+
 
 .map {
     padding-right: 0px;  
 }
 
-.center {
-    padding-left: 20%;
-    padding-bottom: 100px;  
-}
 
-.modal-backdrop {
-    z-index: -1; 
-}   
 
-.modal-dialog {
-    margin-top: 15%; 
+    .modal-backdrop {
+        z-index: -1; 
+    }   
+
+    .modal-dialog {
+        margin-top: 15%; 
 }
 
 /* ---- Nav Bar Styling ---- */ 
@@ -238,3 +234,21 @@ p {
         -webkit-transform: translateY(0%);
     }
 }
+
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
